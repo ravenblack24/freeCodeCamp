@@ -15,11 +15,11 @@ Passed
 spinalCase("AllThe-small Things") should return "all-the-small-things".
 
 */
+
 function spinalCase(str) {
-  const underscore = /_/g;
   const camelCase = /([a-z])([A-Z])/g
 
-  const update = str.replace(underscore, ' ').replace(camelCase, '$1 $2');
-  return update.toLowerCase().split(" ").join("-");
+  const myString = str.replace(camelCase, '$1 $2');
+  return myString.toLowerCase().split(/\s|_/).join("-");
 }
 spinalCase('This Is Spinal Tap');
