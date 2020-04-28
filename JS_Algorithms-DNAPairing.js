@@ -18,25 +18,25 @@ pairElement("CTCTA") should return [["C","G"],["T","A"],["C","G"],["T","A"],["A"
 
 function pairElement(str) {
   const input = str.split("");
-  const result = [];
+  const paired = [];
 
   for(let i = 0; i<input.length; i++) {
     switch(input[i]) {
         case "A":
-          result.push([input[i], "T"]);
+          paired.push(["A", "T"]);
           break;
         case "T":
-          result.push([input[i], "A"]);
+          paired.push(["T", "A"]);
           break;
         case "C":
-          result.push([input[i], "G"]);
+          paired.push(["C","G"]);
           break;
         case "G":
-         result.push([input[i], "C"]);
+         paired.push(["G", "C"]);
          break;
     }
   }
-  return result;
+  return paired;
 }
 
 pairElement("GCG");
