@@ -18,14 +18,10 @@ fearNotLetter("abcdefghijklmnopqrstuvwxyz") should return undefined.
 */
 
 function fearNotLetter(str) {
-  const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
- const strArray = str.split("");
- const startCounter = letters.indexOf(strArray[0]);
- let missingLetter = undefined;
-
- for(let i = 0; i<strArray.length; i++) {
-   if (strArray[i] !== letters[startCounter+i]) {
-      return letters[startCounter+i];
+ const start = str.charCodeAt(str[0]);
+ for(let i = 0; i<str.length; i++) {
+   if (str.charCodeAt(i) != start+i) {
+      return String.fromCharCode(start+i);
    }
  }
   return undefined;
