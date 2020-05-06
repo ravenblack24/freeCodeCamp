@@ -18,7 +18,7 @@ fearNotLetter("abcdefghijklmnopqrstuvwxyz") should return undefined.
 */
 
 function fearNotLetter(str) {
- const start = str.charCodeAt(str[0]);
+ const start = str.charCodeAt(0);
  for(let i = 0; i<str.length; i++) {
    if (str.charCodeAt(i) != start+i) {
       return String.fromCharCode(start+i);
