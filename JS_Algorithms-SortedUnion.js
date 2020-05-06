@@ -27,3 +27,19 @@ function uniteUnique(arr) {
   }
   return str.filter((item, index) => str.indexOf(item) === index);
 }
+
+/**
+
+A concise ES2015 solution:
+
+function uniteUnique(...arrays) {
+  //make an array out of the given arrays and flatten it (using the spread operator)
+  const flatArray = [].concat(...arrays);
+
+  // create a Set which clears any duplicates since it's a regulat set and not a multiset
+  return [...new Set(flatArray)];
+}
+// test here
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+*/
