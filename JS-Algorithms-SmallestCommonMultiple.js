@@ -22,25 +22,18 @@ Passed
 smallestCommons([23, 18]) should return 6056820.
 */
 function smallestCommons(arr) {
-  let range = [];
-
-  for(let i = Math.min(...arr); i<= Math.max(...arr); i++) {
-      range.push(i);
-  }
-
-  let max = Math.max(...range);
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
   let multiple = max * (max-1);
 
-  while (!checkArray(range, multiple)){
-    multiple+=max;
+  for(let i = max; i>= min; i--) {
+    if(multiple%i !== 0) {
+      multiple += max;
+      i= max;
+    }
   }
-  return multiple;
-}
 
-function checkArray(array, value) {
-   return array.every((i) => {
-      return value%i == 0;
-  });
+  return multiple;
 }
 
 smallestCommons([1,5]);
