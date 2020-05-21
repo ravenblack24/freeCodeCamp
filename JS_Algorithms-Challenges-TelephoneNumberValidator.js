@@ -49,27 +49,8 @@ telephoneCheck("(555)5(55?)-5555") should return false.
 
 */
 
+
 function telephoneCheck(str) {
-  const digitCount = str.match(/\d/g).length;
-  const symbols = str.match(/\D/g);
-  const approvedSymbols = / |-|\(|\)/g;
-  const bracketUsage = str.match(/^((1\s?)?\(\d{3}\))|^((1\s?)?\d{3}(\s|-|\d))/);
-  const startNum = str.match(/^1/);
-
-  let symbolLength = 0;
-  if(symbols != null) {
-    symbolLength = symbols.join("").replace(approvedSymbols, "").length;
-  }
-
-  if(digitCount < 10 || digitCount > 11) {
-    return false;
-  } else if(symbolLength > 0){
-    return false;
-  } else if(bracketUsage == null) {
-    return false;
-  } else if(digitCount == 11 && startNum == null) {
-    return false;
-  } else {
-    return true;
-  }
+  const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
+  return regex.test(str);
 }
