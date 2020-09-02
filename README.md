@@ -2,10 +2,10 @@
 > Repository of project solutions for freeCodeCamp Javascript Algorithms and Data Structures Certification plus lesson solutions which may be useful in the future.
 
 ## Table of contents
-* [General Info](#general)
+* [General Info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Challenge Projects](#challenge)
+* [Challenge Projects](#challenge-projects)
 * [Status](#status)
 * [Contact](#contact)
 
