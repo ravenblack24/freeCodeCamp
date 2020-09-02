@@ -2,15 +2,15 @@
 > Repository of project solutions for freeCodeCamp Javascript Algorithms and Data Structures Certification plus lesson solutions which may be useful in the future.
 
 ## Table of contents
+* [General Info](#general)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Challenge Projects](#features)
+* [Challenge Projects](#challenge)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## General info
-These solutions were originally written using the Lesson/Project descriptions and verified against the test cases documented on freeCodeCamp.  
+These solutions were originally written using the Lesson/Project descriptions and verified against the test cases documented on freeCodeCamp.  freeCodeCamp full stack web development certification modules, lessons and projects are [available here](https://www.freecodecamp.org/learn).
 
 ## Technologies
 * Vanilla Javascript
@@ -30,9 +30,6 @@ To-do list:
 
 ## Status
 Project is finished as I completed the Javascript Algorithms and Data Structures certification in June 2020.
-
-## Inspiration
-freeCodeCamp full stack web development certification modules, lessons and projects are [available here](https://www.freecodecamp.org/learn).
 
 ## Contact
 Created by [Kay Pea](#) - feel free to contact me!
