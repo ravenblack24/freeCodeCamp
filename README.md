@@ -32,7 +32,7 @@ To-do list:
 Project is finished as I completed the Javascript Algorithms and Data Structures certification in June 2020.
 
 ## Inspiration
-freeCodeCamp full stack web development certification modules, lessons and projects are [available here] (https://www.freecodecamp.org/learn).
+freeCodeCamp full stack web development certification modules, lessons and projects are [available here](https://www.freecodecamp.org/learn).
 
 ## Contact
 Created by [Kay Pea](#) - feel free to contact me!
